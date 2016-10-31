@@ -28,8 +28,8 @@ Cobertura >20% (se hicieron solo Test Unitarios de la parte REST).
 		cd online
 		mvn spring-boot:run
 ## Accediendo a la aplicación:
-	Para el servicio REST: http://localhost:9090
-	![Aplicacion](https://github.com/PabloInnocenti/SpringBootBasic/images/Sistemas.png)
+	Para acceder a la aplicación: http://localhost:9090
+	![Aplicacion](https://raw.githubusercontent.com/PabloInnocenti/SpringBootBasic/master/images/Sistemas.png)
 
 ## Micelaneous:
 	Para ver los datos en la base H2: http://localhost:9090/console
@@ -37,18 +37,23 @@ Cobertura >20% (se hicieron solo Test Unitarios de la parte REST).
 	Para pedir el primer registro por id: http://localhost:9090/sistema/1
 # Medicion de Calidad y reportes:
 	Cobertura: mvn cobertura:cobertura --> online\target\site\cobertura
+	![Cobertura](https://raw.githubusercontent.com/PabloInnocenti/SpringBootBasic/master/images/cobertura.png)
 	JUnit: mvn surefire-report:report --> online\target\site\surefire-report.html
+	![Surefire](https://raw.githubusercontent.com/PabloInnocenti/SpringBootBasic/master/images/surefire.png)
 
 # Relevamiento de requerimientos: Casos de Uso:
 --------------------------------------------------------------------------------------------
 ## Flujo principal: Listado de Sistemas
 
 Actores: Usuario
+
 Pre-condiciones: 
 	- Sevidor aplicativo Tomcat ( modulo online: mvn spring-boot:run) corriendo.
 
 a) Flujo Basico:
+
 	1) El usuario debe entrar a http://localhost:9090/
+	
 	Post condiciones:
 		El sistema deberá presentar un listado de sistemas operativos precargados.
 
