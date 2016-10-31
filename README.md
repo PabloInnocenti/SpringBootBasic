@@ -43,7 +43,8 @@
 ![Surefire](surefire.png)
 
 # Relevamiento de requerimientos: Casos de Uso #
---------------------------------------------------------------------------------------------
+
+---
 ## Flujo principal: Listado de Sistemas ##
 
 Actores: 
@@ -61,7 +62,8 @@ Post condiciones:
 
 Requerimientos no funcionales:
 * Sin Seguridad ni encriptacion. 
---------------------------------------------------------------------------------------------
+
+---
 ## Flujo principal: Agregar un Sistema ##
 
 Actores: 
@@ -83,7 +85,8 @@ Requerimientos no funcionales:
 * Sin Seguridad ni encriptacion.
 
 b) Flujo alternativo: sistema ya existente.
---------------------------------------------------------------------------------------------
+
+---
 ## Flujo principal: Actualizar un Sistema ##
 
 Actores: 
@@ -105,7 +108,7 @@ Post condiciones:
 Requerimientos no funcionales:
 * Sin Seguridad ni encriptacion.
 
---------------------------------------------------------------------------------------------
+---
 ## Flujo principal: Eliminar un Sistema ##
 
 Actores: 
@@ -124,7 +127,8 @@ Post condiciones:
 
 Requerimientos no funcionales:
 * Sin Seguridad ni encriptacion.
---------------------------------------------------------------------------------------------
+
+---
 ## Flujo principal: Listado de Sistemas ##
 
 Actores: 
@@ -143,7 +147,7 @@ Post condiciones:
 
 Requerimientos no funcionales:
 * Sin Seguridad ni encriptacion. 
-
+---
 # Documentación: #
 Resta realizar el manual de usuario y esquemas de Alto Nivel de Arquitectura, junto con los diagramas del aplicativo microservicio en formato Enterprise Arquitecture: 
 * secuencia
