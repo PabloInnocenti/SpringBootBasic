@@ -20,19 +20,26 @@ Cobertura >20% (se hicieron solo Test Unitarios de la parte REST).
 	Comandos:
 		git clone https://github.com/PabloInnocenti/SpringBootBasic.git
 		mvn clean package
-		cd online
-		mvn spring-boot:run -> http://localhost:9090/
 		Logs: sistemas.log
-	Acceso al sistema:
-		Para ver los datos en la base H2: http://localhost:9090/console
-		Para el servicio REST: http://localhost:9090/sistema/
-		Para pedir el primer registro por id: http://localhost:9090/sistema/1
-	Medicion de Calidad y reportes:
-		Cobertura: mvn cobertura:cobertura --> online\target\site\cobertura
-		JUnit: mvn surefire-report:report --> online\target\site\surefire-report.html
-		
 
-# Casos de Uso:
+
+# Accesdiendo a la aplicacion:
+## Correr la aplicacion:
+		cd online
+		mvn spring-boot:run
+## Accediendo a la aplicación:
+	Para el servicio REST: http://localhost:9090
+	![Aplicacion](https://github.com/PabloInnocenti/SpringBootBasic/images/Sistemas.png)
+
+## Micelaneous:
+	Para ver los datos en la base H2: http://localhost:9090/console
+	Para el servicio REST: http://localhost:9090/sistema/
+	Para pedir el primer registro por id: http://localhost:9090/sistema/1
+# Medicion de Calidad y reportes:
+	Cobertura: mvn cobertura:cobertura --> online\target\site\cobertura
+	JUnit: mvn surefire-report:report --> online\target\site\surefire-report.html
+
+# Relevamiento de requerimientos: Casos de Uso:
 --------------------------------------------------------------------------------------------
 ## Flujo principal: Listado de Sistemas
 
