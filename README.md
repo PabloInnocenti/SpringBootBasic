@@ -45,6 +45,7 @@
 # Relevamiento de requerimientos: Casos de Uso #
 
 ---
+
 ## Flujo principal: Listado de Sistemas ##
 
 Actores: 
@@ -64,6 +65,7 @@ Requerimientos no funcionales:
 * Sin Seguridad ni encriptacion. 
 
 ---
+
 ## Flujo principal: Agregar un Sistema ##
 
 Actores: 
@@ -87,6 +89,7 @@ Requerimientos no funcionales:
 b) Flujo alternativo: sistema ya existente.
 
 ---
+
 ## Flujo principal: Actualizar un Sistema ##
 
 Actores: 
@@ -109,6 +112,7 @@ Requerimientos no funcionales:
 * Sin Seguridad ni encriptacion.
 
 ---
+
 ## Flujo principal: Eliminar un Sistema ##
 
 Actores: 
@@ -129,6 +133,7 @@ Requerimientos no funcionales:
 * Sin Seguridad ni encriptacion.
 
 ---
+
 ## Flujo principal: Listado de Sistemas ##
 
 Actores: 
@@ -147,11 +152,18 @@ Post condiciones:
 
 Requerimientos no funcionales:
 * Sin Seguridad ni encriptacion. 
+
 ---
+
 # Documentación: #
-Resta realizar el manual de usuario y esquemas de Alto Nivel de Arquitectura, junto con los diagramas del aplicativo microservicio en formato Enterprise Arquitecture: 
-* secuencia
-* clases
-* arquitectura
-* negocio
-* maquina de estados  
+
+Resta realizar manuales y diagramas (draw.io): 
+
+- [ ] diagrama de secuencia
+- [ ] diagrama de clases
+- [ ] diagrama de arquitectura
+- [ ] diagrama de maquina de estados 
+- [ ] Arquitectura de alto nivel 
+
+- [ ] Documento del negocio
+- [ ] Documento manual de usuario
