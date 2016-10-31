@@ -29,7 +29,8 @@ Cobertura >20% (se hicieron solo Test Unitarios de la parte REST).
 		mvn spring-boot:run
 ## Accediendo a la aplicación:
 	Para acceder a la aplicación: http://localhost:9090
-	![Aplicacion](https://raw.githubusercontent.com/PabloInnocenti/SpringBootBasic/master/images/Sistemas.png)
+
+![Aplicacion](Sistemas.png)
 
 ## Micelaneous:
 	Para ver los datos en la base H2: http://localhost:9090/console
@@ -37,9 +38,12 @@ Cobertura >20% (se hicieron solo Test Unitarios de la parte REST).
 	Para pedir el primer registro por id: http://localhost:9090/sistema/1
 # Medicion de Calidad y reportes:
 	Cobertura: mvn cobertura:cobertura --> online\target\site\cobertura
-	![Cobertura](https://raw.githubusercontent.com/PabloInnocenti/SpringBootBasic/master/images/cobertura.png)
+	
+![Cobertura](cobertura.png)
+	
 	JUnit: mvn surefire-report:report --> online\target\site\surefire-report.html
-	![Surefire](https://raw.githubusercontent.com/PabloInnocenti/SpringBootBasic/master/images/surefire.png)
+	
+![Surefire](surefire.png)
 
 # Relevamiento de requerimientos: Casos de Uso:
 --------------------------------------------------------------------------------------------
@@ -47,85 +51,96 @@ Cobertura >20% (se hicieron solo Test Unitarios de la parte REST).
 
 Actores: Usuario
 
-Pre-condiciones: 
-	- Sevidor aplicativo Tomcat ( modulo online: mvn spring-boot:run) corriendo.
+Pre-condiciones:
+	Sevidor aplicativo Tomcat ( modulo online: mvn spring-boot:run) corriendo.
 
 a) Flujo Basico:
 
 	1) El usuario debe entrar a http://localhost:9090/
-	
-	Post condiciones:
-		El sistema deberá presentar un listado de sistemas operativos precargados.
 
-	Requerimientos no funcionales:
-		- Sin Seguridad ni encriptacion. 
+Post condiciones:
+	El sistema deberá presentar un listado de sistemas operativos precargados.
+
+Requerimientos no funcionales:
+	Sin Seguridad ni encriptacion. 
 --------------------------------------------------------------------------------------------
 ## Flujo principal: Agregar un Sistema
 
 Actores: Usuario
+
 Pre-condiciones: 
-	- Sevidor aplicativo Tomcat ( modulo online: mvn spring-boot:run) corriendo.
+	Sevidor aplicativo Tomcat ( modulo online: mvn spring-boot:run) corriendo.
 
 a) Flujo Basico:
+
 	1) El usuario debe entrar a http://localhost:9090/
 	2) El usuario debera ingresar un nombre de Sistema Operativo y una Descripcion validas.
 	3) El usuario debera presionar el boton "Add".
-	Post condiciones:
-		El sistema presentará una lista actualizada con el sistema agregado.
 
-	Requerimientos no funcionales:
-		- Sin Seguridad ni encriptacion.
+Post condiciones:
+	El sistema presentará una lista actualizada con el sistema agregado.
+
+Requerimientos no funcionales:
+	Sin Seguridad ni encriptacion.
 
 b) Flujo alternativo: sistema ya existente.
 --------------------------------------------------------------------------------------------
 ## Flujo principal: Actualizar un Sistema
 
 Actores: Usuario
+
 Pre-condiciones: 
-	- Sevidor aplicativo Tomcat ( modulo online: mvn spring-boot:run) corriendo.
+	Sevidor aplicativo Tomcat ( modulo online: mvn spring-boot:run) corriendo.
 
 a) Flujo Basico:
+
 	1) El usuario debe entrar a http://localhost:9090/
 	2) El usuario debera seleccionar un sistema a actualizar y presionar "Editar".
 	3) El usuario debera ingresar una nueva Descripcion valida.
 	4) El usuario debera presionar el boton "Update".
-	Post condiciones:
-		El sistema presentará una lista actualizada con el sistema modificado.
 
-	Requerimientos no funcionales:
-		- Sin Seguridad ni encriptacion.
+Post condiciones:
+	El sistema presentará una lista actualizada con el sistema modificado.
+
+Requerimientos no funcionales:
+	Sin Seguridad ni encriptacion.
 
 --------------------------------------------------------------------------------------------
 ## Flujo principal: Eliminar un Sistema
 
 Actores: Usuario
+
 Pre-condiciones: 
-	- Sevidor aplicativo Tomcat ( modulo online: mvn spring-boot:run) corriendo.
+	Sevidor aplicativo Tomcat ( modulo online: mvn spring-boot:run) corriendo.
 
 a) Flujo Basico:
+
 	1) El usuario debe entrar a http://localhost:9090/
 	2) El usuario debera ir a un sistema y presionar "Eliminar".
 
-	Post condiciones:
-		El sistema presentará una lista actualizada sin el sistema eliminado.
+Post condiciones:
+	El sistema presentará una lista actualizada sin el sistema eliminado.
 
-	Requerimientos no funcionales:
-		- Sin Seguridad ni encriptacion.
+Requerimientos no funcionales:
+	Sin Seguridad ni encriptacion.
 --------------------------------------------------------------------------------------------
 ## Flujo principal: Listado de Sistemas
 
 Actores: Usuario
+
 Pre-condiciones: 
-	- Sevidor aplicativo Tomcat ( modulo online: mvn spring-boot:run) corriendo.
+	Sevidor aplicativo Tomcat ( modulo online: mvn spring-boot:run) corriendo.
 
 a) Flujo Basico:
+
 	1) El usuario debe entrar a http://localhost:9090/
 	2) El usuario debera seleccionar un sistema de la lista desplegable.
-	Post condiciones:
-		El sistema deberá presentar la descripcion en el TextArea.
 
-	Requerimientos no funcionales:
-		- Sin Seguridad ni encriptacion. 
-		
+Post condiciones:
+	El sistema deberá presentar la descripcion en el TextArea.
+
+Requerimientos no funcionales:
+	Sin Seguridad ni encriptacion. 
+
 # Documentación:
 Resta realizar el manual de usuario y esquemas de Alto Nivel de Arquitectura, junto con los diagramas de: secuencia, clases, arquitectura, negocio y maquina de estados  del aplicativo microservicio en formato Enterprise Arquitecture
