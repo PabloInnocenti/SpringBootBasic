@@ -22,10 +22,11 @@
 		* mvn clean package
 		* Logs: sistemas.log
 
-# Accesdiendo a la aplicacion #
+# Accediendo a la aplicacion #
 ## Correr la aplicacion ##
 * cd online
 * mvn spring-boot:run
+
 ## Accediendo a la aplicación ##
 * Para acceder a la aplicación: http://localhost:9090
 ![Aplicacion](Sistemas.png)
