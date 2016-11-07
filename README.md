@@ -168,3 +168,5 @@ Resta realizar manuales y diagramas (draw.io):
 
 - [ ] Documento del negocio
 - [ ] Documento manual de usuario
+
+- [ ] Agragar Sonar Qube
